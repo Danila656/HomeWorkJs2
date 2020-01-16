@@ -1,15 +1,25 @@
-const num1 = Number(prompt('Введите первое число'));
-const num2 = Number(prompt('Введите второе число'));
+const getNumber = message => {
+    let number = Number(prompt(message));
 
-const Multiplication = (num1, num2) => document.write(`Произведение : ${+num1 * +num2}<br>`);
+    while (isNaN(number)) {
+        number = Number(prompt(message));
+    }
 
-const Sum = (num1, num2) => document.write(`Сумма : ${num1 + num2}<br>`);
+    return number;
+};
 
-const Subtraction = (num1, num2) => document.write(`Разница : ${num1 - num2}<br>`);
+const number1 = getNumber('Введите первое число');
+const number2 = getNumber('Введите второе число');
 
-const Division = (num1, num2) => document.write(`Частное : ${num1 / num2}`);
+const multiplication = (num1, num2) => num1 * num2;
 
-Multiplication();
-Sum();
-Subtraction();
-Division();
+const sum = (num1, num2) => num1 + num2;
+
+const subtraction = (num1, num2) => num1 - num2;
+
+const division = (num1, num2) => num1 / num2;
+
+multiplication(number1, number2);
+sum(number1, number2);
+subtraction(number1, number2);
+division(number1, number2);

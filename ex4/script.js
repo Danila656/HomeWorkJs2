@@ -1,6 +1,9 @@
-const choise = prompt('Выберите один из пунктов \n 1. Автомобиль \n 2. Мотоцикл \n 3. Велосипед');
+const choice = prompt(`Выберите один из пунктов
+ 1. Автомобиль
+ 2. Мотоцикл
+ 3. Велосипед`);
 
-switch (choise) {
+switch (choice) {
     case '1':
         alert('Автомобиль');
         break;

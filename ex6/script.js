@@ -1,15 +1,14 @@
-const num1 = 15;
-const num2 = 3;
+const number1 = 15;
+const number2 = 3;
 
-function multiply() {
-    const multiplication = num1 * num2;
-    document.write(`Произведение : ${multiplication} <br>`);
+function multiply(num1, num2) {
+    return num1 * num2;
 }
 
-function devide() {
-    const division = num1 / num2;
-    document.write(`Частное : ${division}`);
+function devide(num1, num2) {
+    return num1 / num2;
 }
 
-multiply();
-devide();
+document.write(multiply(number1, number2));
+document.write('<br>');
+document.write(devide(number1, number2));

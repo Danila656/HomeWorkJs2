@@ -1,5 +1,5 @@
-let succes = confirm('Хотите ли вы прододлжить?');
+let success = confirm('Хотите ли вы продолжить?');
 
-while (succes) {
-    succes = confirm('Хотите ли вы продолжить?')
+while (success) {
+    success = confirm('Хотите ли вы продолжить?');
 }
