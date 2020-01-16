@@ -1,14 +1,14 @@
-const num1 = num2 = 10;
+const number1 = 15;
+const number2 = 10;
 
-const plus = function () {
-    const sum = num1 + num2;
-    document.write(`Сумма : ${sum} <br>`);
+const plus = function (num1, num2) {
+    return num1 + num2;
 };
 
-const minus = function () {
-    const subtraction = num1 - num2;
-    document.write(`Разница : ${subtraction}`);
+const minus = function (num1, num2) {
+    return num1 - num2;
 };
 
-plus();
-minus();
+document.write(plus(number1, number2));
+document.write('<br>');
+document.write(minus(number1,number2));
