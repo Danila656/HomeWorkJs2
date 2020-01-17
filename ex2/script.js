@@ -1,4 +1,4 @@
-const num = prompt('Введите число');
+const num =Number(prompt('Введите число'));
 
 if (num >= 5) {
     for (let i = 0; i <= num; i++) {
